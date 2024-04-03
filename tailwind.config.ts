@@ -9,9 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        hero: "url('../public/background.jpeg')",
+      },
+      colors: {
+        brownish: "#69443c",
+        light: "#f3ede4",
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        seasons: ["var(--font-seasons)"],
+        epilogue: ["var(--font-epilogue)"],
       },
     },
   },
