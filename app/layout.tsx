@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="!scroll-smooth snap-y snap-mandatory overflow-y-scroll"
+      className="!scroll-smooth sm:snap-y sm:snap-mandatory overflow-y-scroll"
     >
       <body
         className={`${theSeasons.variable} ${epilogue.variable} font-epilogue bg-white text-brownish z-0`}

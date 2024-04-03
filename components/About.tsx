@@ -16,16 +16,18 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="min-h-screen flex relative flex-col text-center md:text-left max-w-7xl pl-[70px] pr-[40px] py-24 justify-evenly mx-auto items-center"
+      className="min-h-screen flex relative flex-col text-center md:text-left max-w-7xl pl-[70px] pr-[20px] sm:pr-[40px] py-24 justify-evenly mx-auto items-center"
     >
-      <h3 className="uppercase tracking-[20px] text-2xl pb-10">About</h3>
+      <h3 className="uppercase tracking-[10px] text-xl md:text-2xl md:tracking-[20px] pb-10">
+        About
+      </h3>
 
       <div className="flex flex-col md:flex-row justify-evenly mx-auto items-center grow gap-20">
-        <div className="md:w-3/5 space-y-10 px-0 md:px-10">
-          <h4 className="text-xl md:text-4xl font-light tracking-wide leading-relaxed md:leading-relaxed">
+        <div className="md:w-3/5 space-y-10 px-4 md:px-10">
+          <h4 className="text-l md:text-4xl font-light tracking-wide leading-relaxed md:leading-relaxed">
             Hi I am{" "}
             <Image
-              className="inline w-[40px] h-[42px] md:w-[56px] md:h-[60px] pb-3 md:pb-4"
+              className="inline w-[35px] h-[38px] md:w-[56px] md:h-[60px] pb-3 md:pb-4"
               width={56}
               height={60}
               src="/logo.png"
@@ -46,7 +48,7 @@ function About({}: Props) {
             running volleyball and traveling. I also enjoy learning new things.
             Last year, I took a course on accounting.
           </p>
-          <div className="pt-3">
+          <div className="sm:pt-3">
             <a
               className="inline hero-button items-center"
               href="/Fullstack developer - Elke Schoenmaekers.pdf"

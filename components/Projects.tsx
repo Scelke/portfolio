@@ -18,10 +18,11 @@ function Projects({}: Props) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="min-h-screen py-24 flex text-center mx-auto flex-col overflow-hidden max-w-7xl pl-[70px] pr-[40px]"
+        className="min-h-screen py-24 flex text-center mx-auto flex-col overflow-hidden max-w-7xl pl-[70px] pr-[20px] sm:pr-[40px]"
       >
-        <h3 className="uppercase tracking-[20px] text-2xl">Recent projects</h3>
-
+        <h3 className="uppercase tracking-[10px] text-xl md:text-2xl md:tracking-[20px]">
+          Recent projects
+        </h3>
         <div className="flex items-center justify-between grow">
           <div className="grid grid-cols-1 gap-5 w-full md:grid-cols-3">
             <Project

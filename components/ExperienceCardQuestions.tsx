@@ -8,7 +8,7 @@ type Props = {
 
 function ExperienceCardQuestions({ company }: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-full sm:w-1/2 snap-center p-10 bg-light opacity-100 transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-full sm:w-1/2 px-6 py-8 sm:p-10 bg-light opacity-100 transition-opacity duration-200 overflow-hidden">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}
@@ -24,7 +24,7 @@ function ExperienceCardQuestions({ company }: Props) {
           {company}
         </a>
         <p className="uppercase my-4">Fullstack engineer</p>
-        <div className="flex space-x-2 my-2">
+        <div className="flex space-x-2 space-y-2 my-2 flex-wrap">
           <Image
             width={37}
             height={30}
@@ -75,7 +75,7 @@ function ExperienceCardQuestions({ company }: Props) {
           />
         </div>
         <p className="py-5 text-gray-400">2017 - 2021</p>
-        <ul className="list-disc space-y-2 ml-5 text-sm">
+        <ul className="list-disc space-y-2 ml-1 sm:ml-5 text-sm">
           <li>
             Full-stack implementation of a data-analysis platform used in the
             field of eHealth

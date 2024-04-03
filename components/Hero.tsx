@@ -18,13 +18,14 @@ function Hero({}: Props) {
     >
       {/* <BackgroundCircles /> */}
       <section className="z-20 snap-start" id="hero">
-        <h2 className="font-seasons text-4xl lg:text-5xl pb-2 font-light">
+        <h2 className="font-seasons text-3xl lg:text-5xl pb-2 font-light">
           Launching soon
         </h2>
-        <h2 className="font-seasons text-5xl lg:text-6xl pb-14">
+        <h2 className="font-seasons text-4xl lg:text-6xl pb-14">
           your website
         </h2>
-        <h1 className="pt-1 m-auto px-10 uppercase tracking-[10px]">
+
+        <h1 className="pt-1 m-auto px-10 uppercase tracking-[5px] md:tracking-[10px] h-12">
           <span className="font-light">
             <Typewriter
               words={[
@@ -44,16 +45,16 @@ function Hero({}: Props) {
 
         <Link
           href="#contact"
-          className="absolute top-8 right-10 flex flex-col tracking-wider text-left"
+          className="absolute top-6 right-6 md:top-8 md:right-10 flex flex-col tracking-wider text-left"
         >
           <div className="flex gap-2 pb-1">
             Contact Me
             <ArrowUpRightIcon className="w-5 h-5 stroke-1" />
           </div>
           <div className="text-sm font-light leading-4	">
-            To get more info or
+            To get more info
             <br />
-            have a chat
+            or have a chat
           </div>
         </Link>
       </section>

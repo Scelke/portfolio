@@ -42,7 +42,7 @@ function Project({ name, link, description, logo }: Props) {
       )}
       {!link && (
         <div className="overflow-hidden group">
-          <div className="relative flex flex-col text-center p-8 pb-2 gap-6 transform group-hover:translate-x-full duration-700">
+          <div className="relative flex flex-col text-center p-4 sm:p-8 pb-2 gap-6 transform group-hover:translate-x-full duration-700">
             <div className="absolute transform -translate-x-full w-full h-full flex justify-center items-center">
               <div className="flex gap-2 italic">Soon live</div>
             </div>

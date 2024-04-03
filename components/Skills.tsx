@@ -16,11 +16,13 @@ function Skills({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="min-h-screen py-24 flex text-center mx-auto flex-col overflow-hidden max-w-7xl pl-[70px] pr-[40px]"
+      className="min-h-screen py-24 flex text-center mx-auto flex-col overflow-hidden max-w-7xl pl-[70px] pr-[20px] sm:pr-[40px]"
     >
-      <h3 className="uppercase tracking-[20px] text-2xl">Skills</h3>
+      <h3 className="uppercase tracking-[10px] text-xl md:text-2xl md:tracking-[20px]">
+        Skills
+      </h3>
       <div className="flex items-center justify-center grow">
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
           <Skill
             description="JS"
             src="/logos/logo-js.png"
@@ -81,7 +83,6 @@ function Skills({}: Props) {
             src="/logos/logo-vercel.svg"
             directionLeft={false}
           />
-
           <Skill
             description="HTML"
             src="/logos/logo-html.svg"
