@@ -19,19 +19,19 @@ function Hero({}: Props) {
       {/* <BackgroundCircles /> */}
       <section className="z-20 snap-start" id="hero">
         <h2 className="font-seasons text-3xl lg:text-5xl pb-2 font-light">
-          Launching soon
+          The portfolio of
         </h2>
         <h2 className="font-seasons text-4xl lg:text-6xl pb-14">
-          your website
+          Elke Schoenmaekers
         </h2>
 
         <h1 className="pt-1 m-auto px-10 uppercase tracking-[5px] md:tracking-[10px] h-12">
           <span className="font-light">
             <Typewriter
               words={[
-                "Elke Schoenmaekers",
                 "Fullstack developer",
                 "Welcome in my digital world",
+                "React | Next.js | Node.js | postgreSQL",
               ]}
               loop={0}
               cursor

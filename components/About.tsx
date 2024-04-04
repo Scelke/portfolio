@@ -45,7 +45,7 @@ function About({}: Props) {
             always looking to learn new technologies. <br />
             <br />
             <span className="italic">When I&apos;m not coding</span>, I enjoy
-            running volleyball and traveling. I also enjoy learning new things.
+            running, volleyball and traveling. I also enjoy learning new things.
             Last year, I took a course on accounting.
           </p>
           <div className="sm:pt-3">
