@@ -13,7 +13,7 @@ function Skill({ directionLeft, src, description }: Props) {
     <div className="group relative flex">
       <motion.div
         className="relative"
-        initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
+        initial={{ x: directionLeft ? -100 : 100, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}

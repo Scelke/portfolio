@@ -21,7 +21,7 @@ function Skills({}: Props) {
       <h3 className="uppercase tracking-[10px] text-xl md:text-2xl md:tracking-[20px] pb-10">
         Skills
       </h3>
-      <div className="flex items-center justify-center grow">
+      <div className="flex justify-center grow">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
           <Skill
             description="JS"
@@ -64,23 +64,23 @@ function Skills({}: Props) {
             directionLeft={true}
           />
           <Skill
-            description="MongoDB"
-            src="/logos/logo-mongo.svg"
-            directionLeft={false}
-          />
-          <Skill
             description="Vue.js"
             src="/logos/logo-vue.png"
             directionLeft={false}
           />
           <Skill
-            description="Webflow"
-            src="/logos/logo-webflow.png"
+            description="MongoDB"
+            src="/logos/logo-mongo.svg"
             directionLeft={false}
           />
           <Skill
             description="Vercel"
             src="/logos/logo-vercel.svg"
+            directionLeft={false}
+          />
+          <Skill
+            description="Webflow"
+            src="/logos/logo-webflow.png"
             directionLeft={false}
           />
           <Skill

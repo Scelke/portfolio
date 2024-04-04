@@ -33,7 +33,7 @@ function Navbar({}: Props) {
   };
 
   return (
-    <header className="fixed h-[90vh] w-[40px] top-[5vh] left-[15px] py-4 flex flex-col bg-transparent font-light tracking-wide border-r border-brownish z-50 justify-between">
+    <header className="fixed h-[90vh] w-[40px] top-[5vh] left-[10px] py-4 flex flex-col bg-transparent font-light tracking-wide border-r border-brownish z-50 justify-between">
       <Link href="#hero">
         <Image
           width={37}
