@@ -14,6 +14,24 @@ function Navbar({}: Props) {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
+  const isActiveSection = (element: string) => {
+    const activeSect = activeSection.toLowerCase();
+
+    if (activeSect === element.toLowerCase()) return true;
+    if (element === "experience") {
+      if (
+        activeSect === "experiencecubitec" ||
+        activeSect === "experiencequestions"
+      ) {
+        return true;
+      }
+    }
+    if (element === "about") {
+      if (activeSect === "aboutimage") return true;
+    }
+    return false;
+  };
+
   return (
     <header className="fixed h-[90vh] w-[40px] top-[5vh] left-[15px] py-4 flex flex-col bg-transparent font-light tracking-wide border-r border-brownish z-50 justify-between">
       <Link href="#hero">
@@ -37,7 +55,8 @@ function Navbar({}: Props) {
             }}
           >
             {element}
-            {activeSection.toLowerCase() === element.toLowerCase() && (
+
+            {isActiveSection(element.toLowerCase()) && (
               <div className="absolute top-0 bottom-0 left-0 -right-1 h-full w-full bg-light -z-10 rounded-sm"></div>
             )}
           </Link>

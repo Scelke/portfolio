@@ -59,19 +59,29 @@ function About({}: Props) {
             </a>
           </div>
         </div>
-
         <div className="md:w-2/5">
-          <div className="group relative w-40 h-40 md:w-64 md:h-64 xl:w-[400px] xl:h-[400px] flex-shrink-0 bg-light rounded-full">
-            <Image
-              src="/elke.png"
-              alt="Image of Elke"
-              fill={true}
-              className="rounded-full object-cover md:rounded-large -translate-y-3 group-hover:-translate-y-6 duration-200"
-            />
-          </div>
+          <AboutImage />
         </div>
       </div>
     </motion.div>
+  );
+}
+
+function AboutImage() {
+  const { ref } = useSectionInView("AboutImage");
+
+  return (
+    <div
+      ref={ref}
+      className="group relative w-40 h-40 md:w-64 md:h-64 xl:w-[400px] xl:h-[400px] flex-shrink-0 bg-light rounded-full"
+    >
+      <Image
+        src="/elke.png"
+        alt="Image of Elke"
+        fill={true}
+        className="rounded-full object-cover md:rounded-large -translate-y-3 group-hover:-translate-y-6 duration-200"
+      />
+    </div>
   );
 }
 

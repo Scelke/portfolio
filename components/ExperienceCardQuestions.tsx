@@ -1,14 +1,20 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 type Props = {
   company: string;
 };
 
 function ExperienceCardQuestions({ company }: Props) {
+  const { ref } = useSectionInView("ExperienceQuestions");
+
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-full sm:w-1/2 px-6 py-8 sm:p-10 bg-light opacity-100 transition-opacity duration-200 overflow-hidden">
+    <article
+      ref={ref}
+      className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-full sm:w-1/2 px-6 py-8 sm:p-10 bg-light opacity-100 transition-opacity duration-200 overflow-hidden"
+    >
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}

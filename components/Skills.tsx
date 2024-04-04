@@ -18,7 +18,7 @@ function Skills({}: Props) {
       transition={{ duration: 1.5 }}
       className="min-h-screen py-24 flex text-center mx-auto flex-col overflow-hidden max-w-7xl pl-[70px] pr-[20px] sm:pr-[40px]"
     >
-      <h3 className="uppercase tracking-[10px] text-xl md:text-2xl md:tracking-[20px]">
+      <h3 className="uppercase tracking-[10px] text-xl md:text-2xl md:tracking-[20px] pb-10">
         Skills
       </h3>
       <div className="flex items-center justify-center grow">
