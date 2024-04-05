@@ -30,7 +30,7 @@ function ExperienceCardCubitec({ company }: Props) {
           {company}
         </a>
         <p className="uppercase my-4">Fullstack engineer</p>
-        <div className="flex space-x-2 space-y-2 my-2 flex-wrap">
+        <div className="flex space-x-2 my-2 flex-wrap">
           <Image
             width={30}
             height={30}
