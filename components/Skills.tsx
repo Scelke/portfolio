@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
-import ExperienceCard from "./ExperienceCardCubitec";
 import Skill from "./Skill";
 import { useSectionInView } from "@/lib/hooks";
 
@@ -91,6 +90,11 @@ function Skills({}: Props) {
           <Skill
             description="Prisma.io"
             src="/logos/logo-prisma.png"
+            directionLeft={false}
+          />
+          <Skill
+            description="Framer motion"
+            src="/logos/logo-framermotion.svg"
             directionLeft={false}
           />
         </div>

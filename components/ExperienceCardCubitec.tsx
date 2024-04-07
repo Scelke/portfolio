@@ -35,7 +35,7 @@ function ExperienceCardCubitec({ company }: Props) {
             width={30}
             height={30}
             src="/logos/logo-vue.png"
-            alt="Logo javascript"
+            alt="Logo Vue.js"
           />
           <Image
             width={30}
