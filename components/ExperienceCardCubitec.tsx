@@ -13,7 +13,7 @@ function ExperienceCardCubitec({ company }: Props) {
   return (
     <article
       ref={ref}
-      className="flex flex-col rounded-lg items-center sm:space-y-7 flex-shrink-0 w-full sm:w-1/2 px-6 py-8 sm:p-10 bg-light opacity-100 transition-opacity duration-200 overflow-hidden"
+      className="flex flex-col rounded-lg items-center sm:space-y-7 flex-shrink-0 w-full sm:w-1/2 px-6 py-8 sm:p-10 bg-light transition-opacity duration-200 overflow-hidden"
     >
       <motion.div
         initial={{ y: -100, opacity: 0 }}
