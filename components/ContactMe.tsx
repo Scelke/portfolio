@@ -9,7 +9,7 @@ type Props = {};
 
 function ContactMe({}: Props) {
   const { ref } = useSectionInView("Contact");
-  const [state, handleSubmit] = useForm(`${process.env.FORMSPREE}`);
+  const [state, handleSubmit] = useForm(`${process.env.NEXT_PUBLIC_FORMSPREE}`);
 
   return (
     <motion.div
@@ -28,6 +28,7 @@ function ContactMe({}: Props) {
         </div>
         <form
           onSubmit={handleSubmit}
+          method="POST"
           className="md:text-l !leading-[3rem] w-4/5 mx-auto"
         >
           <div className="flex flex-col md:flex-row md:gap-4">
